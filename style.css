@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#card {
+    width: 350px;
+    height: 500px;
+    background-size: 100% 70%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-color: orange;
+    background-image: url(./cake.png);
+    background-position: center;
+    transition: all 0.3s ease-in;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    border: 10px double white;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#card:hover {
+    animation: move 0.7s ease-out;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#inner {
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-color: orange;
+    background-position: center;
+    transition: all 0.3s ease-in;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    z-index: -1;
+    border: 10px double white;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+body {
+    background: linear-gradient(to left,pink, hotpink, pink);
+}
